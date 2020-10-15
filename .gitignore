@@ -1,0 +1,6 @@
+test/*
+pickled_models/*
+data/*
+submissions/*
+data/pickled_models
+java/*
