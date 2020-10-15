@@ -63,51 +63,51 @@ This data set was furnished by the driven data website which was kind enough to 
 * The type of well
 * The Geographic and jurisdictional environs
 
-     #   Column                 Non-Null Count  Dtype  
-    ---  ------                 --------------  -----  
-     0   id                     59400 non-null  int64  
-     1   status_group           59400 non-null  object 
-     2   amount_tsh             59400 non-null  float64
-     3   date_recorded          59400 non-null  object 
-     4   funder                 55765 non-null  object 
-     5   gps_height             59400 non-null  int64  
-     6   installer              55745 non-null  object 
-     7   longitude              59400 non-null  float64
-     8   latitude               59400 non-null  float64
-     9   wpt_name               59400 non-null  object 
-     10  num_private            59400 non-null  int64  
-     11  basin                  59400 non-null  object 
-     12  subvillage             59029 non-null  object 
-     13  region                 59400 non-null  object 
-     14  region_code            59400 non-null  int64  
-     15  district_code          59400 non-null  int64  
-     16  lga                    59400 non-null  object 
-     17  ward                   59400 non-null  object 
-     18  population             59400 non-null  int64  
-     19  public_meeting         56066 non-null  object 
-     20  recorded_by            59400 non-null  object 
-     21  scheme_management      55523 non-null  object 
-     22  scheme_name            31234 non-null  object 
-     23  permit                 56344 non-null  object 
-     24  construction_year      59400 non-null  int64  
-     25  extraction_type        59400 non-null  object 
-     26  extraction_type_group  59400 non-null  object 
-     27  extraction_type_class  59400 non-null  object 
-     28  management             59400 non-null  object 
-     29  management_group       59400 non-null  object 
-     30  payment                59400 non-null  object 
-     31  payment_type           59400 non-null  object 
-     32  water_quality          59400 non-null  object 
-     33  quality_group          59400 non-null  object 
-     34  quantity               59400 non-null  object 
-     35  quantity_group         59400 non-null  object 
-     36  source                 59400 non-null  object 
-     37  source_type            59400 non-null  object 
-     38  source_class           59400 non-null  object 
-     39  waterpoint_type        59400 non-null  object 
-     40  waterpoint_type_group  59400 non-null  object 
-    dtypes: float64(3), int64(7), object(31)
-    memory usage: 19.0+ MB
+          #  Column                 Non-Null Count  Dtype  
+        ---  ------                 --------------  -----  
+         0   id                     59400 non-null  int64  
+         1   status_group           59400 non-null  object 
+         2   amount_tsh             59400 non-null  float64
+         3   date_recorded          59400 non-null  object 
+         4   funder                 55765 non-null  object 
+         5   gps_height             59400 non-null  int64  
+         6   installer              55745 non-null  object 
+         7   longitude              59400 non-null  float64
+         8   latitude               59400 non-null  float64
+         9   wpt_name               59400 non-null  object 
+         10  num_private            59400 non-null  int64  
+         11  basin                  59400 non-null  object 
+         12  subvillage             59029 non-null  object 
+         13  region                 59400 non-null  object 
+         14  region_code            59400 non-null  int64  
+         15  district_code          59400 non-null  int64  
+         16  lga                    59400 non-null  object 
+         17  ward                   59400 non-null  object 
+         18  population             59400 non-null  int64  
+         19  public_meeting         56066 non-null  object 
+         20  recorded_by            59400 non-null  object 
+         21  scheme_management      55523 non-null  object 
+         22  scheme_name            31234 non-null  object 
+         23  permit                 56344 non-null  object 
+         24  construction_year      59400 non-null  int64  
+         25  extraction_type        59400 non-null  object 
+         26  extraction_type_group  59400 non-null  object 
+         27  extraction_type_class  59400 non-null  object 
+         28  management             59400 non-null  object 
+         29  management_group       59400 non-null  object 
+         30  payment                59400 non-null  object 
+         31  payment_type           59400 non-null  object 
+         32  water_quality          59400 non-null  object 
+         33  quality_group          59400 non-null  object 
+         34  quantity               59400 non-null  object 
+         35  quantity_group         59400 non-null  object 
+         36  source                 59400 non-null  object 
+         37  source_type            59400 non-null  object 
+         38  source_class           59400 non-null  object 
+         39  waterpoint_type        59400 non-null  object 
+         40  waterpoint_type_group  59400 non-null  object 
+        dtypes: float64(3), int64(7), object(31)
+        memory usage: 19.0+ MB
     
 
 
@@ -1053,25 +1053,25 @@ An additional point of consideration is to eliminate categorical outliers throug
 * extraction_type
 * waterpoint_type
 
-    gravity                      26780
-    nira/tanira                   8154
-    other                         6430
-    submersible                   4764
-    swn 80                        3670
-    mono                          2865
-    india mark ii                 2400
-    afridev                       1770
-    ksb                           1415
-    other - rope pump              451
-    other - swn 81                 229
-    windmill                       117
-    india mark iii                  98
-    cemo                            90
-    other - play pump               85
-    walimi                          48
-    climax                          32
-    other - mkulima/shinyanga        2
-    Name: extraction_type, dtype: int64
+        gravity                      26780
+        nira/tanira                   8154
+        other                         6430
+        submersible                   4764
+        swn 80                        3670
+        mono                          2865
+        india mark ii                 2400
+        afridev                       1770
+        ksb                           1415
+        other - rope pump              451
+        other - swn 81                 229
+        windmill                       117
+        india mark iii                  98
+        cemo                            90
+        other - play pump               85
+        walimi                          48
+        climax                          32
+        other - mkulima/shinyanga        2
+        Name: extraction_type, dtype: int64
 
 
 There's also some housekeeping items in terms of other categorical data. The public meeting column is a boolian column which unfortunately doesn't play well with sci-kit learn model object. There's also the permit column which is string encodded as true false. These actions are done under the hood. 
@@ -1145,42 +1145,43 @@ The following columns are also prime candidates for removal. The process used in
 * Columns that serve as ID or ID-like columns
 * Columns that are macro version of other columns in the data set. Amoung columns with similar entries or columns that are identified as similar by their names, the column with the most granular information is kept. All others are discarded so discourage over-representation.
 
-     #   Column                     Non-Null Count  Dtype  
-    ---  ------                     --------------  -----  
-     0   status_group               59400 non-null  object 
-     1   amount_tsh                 59400 non-null  float64
-     2   gps_height                 59400 non-null  int64  
-     3   longitude                  59400 non-null  float64
-     4   latitude                   59400 non-null  float64
-     5   num_private                59400 non-null  int64  
-     6   basin                      59400 non-null  object 
-     7   region                     59400 non-null  object 
-     8   district_code              59400 non-null  int64  
-     9   population                 59400 non-null  int64  
-     10  public_meeting             56066 non-null  float64
-     11  scheme_management          55523 non-null  object 
-     12  permit                     56344 non-null  float64
-     13  construction_year          59400 non-null  int64  
-     14  extraction_type            59400 non-null  object 
-     15  management                 59400 non-null  object 
-     16  payment                    59400 non-null  object 
-     17  water_quality              59400 non-null  object 
-     18  quantity                   59400 non-null  object 
-     19  source                     59400 non-null  object 
-     20  waterpoint_type            59400 non-null  object 
-     21  encoded_wpt_name           59400 non-null  object 
-     22  encoded_subvillage         59029 non-null  object 
-     23  encoded_installer          55745 non-null  object 
-     24  encoded_ward               59400 non-null  object 
-     25  encoded_funder             55765 non-null  object 
-     26  encoded_date_recorded      59400 non-null  object 
-     27  encoded_lga                59400 non-null  object 
-     28  date_recorded_month        59400 non-null  int64  
-     29  date_recorded_year         59400 non-null  int64  
-     30  date_recorded_day          59400 non-null  int64  
-     31  date_recorded_day_of_week  59400 non-null  int64  
-    dtypes: float64(5), int64(9), object(18)
-    memory usage: 15.0+ MB
+
+         #  Column                     Non-Null Count  Dtype  
+        ---  ------                     --------------  -----  
+         0   status_group               59400 non-null  object 
+         1   amount_tsh                 59400 non-null  float64
+         2   gps_height                 59400 non-null  int64  
+         3   longitude                  59400 non-null  float64
+         4   latitude                   59400 non-null  float64
+         5   num_private                59400 non-null  int64  
+         6   basin                      59400 non-null  object 
+         7   region                     59400 non-null  object 
+         8   district_code              59400 non-null  int64  
+         9   population                 59400 non-null  int64  
+         10  public_meeting             56066 non-null  float64
+         11  scheme_management          55523 non-null  object 
+         12  permit                     56344 non-null  float64
+         13  construction_year          59400 non-null  int64  
+         14  extraction_type            59400 non-null  object 
+         15  management                 59400 non-null  object 
+         16  payment                    59400 non-null  object 
+         17  water_quality              59400 non-null  object 
+         18  quantity                   59400 non-null  object 
+         19  source                     59400 non-null  object 
+         20  waterpoint_type            59400 non-null  object 
+         21  encoded_wpt_name           59400 non-null  object 
+         22  encoded_subvillage         59029 non-null  object 
+         23  encoded_installer          55745 non-null  object 
+         24  encoded_ward               59400 non-null  object 
+         25  encoded_funder             55765 non-null  object 
+         26  encoded_date_recorded      59400 non-null  object 
+         27  encoded_lga                59400 non-null  object 
+         28  date_recorded_month        59400 non-null  int64  
+         29  date_recorded_year         59400 non-null  int64  
+         30  date_recorded_day          59400 non-null  int64  
+         31  date_recorded_day_of_week  59400 non-null  int64  
+        dtypes: float64(5), int64(9), object(18)
+        memory usage: 15.0+ MB
     
 
 ## Re-entering Null Values
@@ -1263,182 +1264,7 @@ We set up the following parameter list to explore hyper-parameter tunning. The m
 We generate a standard classification report as well as confustion matricies for both training and testing set
 
 
-<style  type="text/css" >
-    #T_97e986f6_0eee_11eb_badb_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_97e986f6_0eee_11eb_badb_9078414e5b0a table {
-          margin: auto;
-    }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col0,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col2,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col0,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col1{
-            background-color:  #1b69af;
-            color:  #f1f1f1;
-        }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col2,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col1,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col1,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col4,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col3{
-            background-color:  #529dcc;
-            color:  #000000;
-        }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col4,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col5{
-            background-color:  #4d99ca;
-            color:  #000000;
-        }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col0{
-            background-color:  #8dc1dd;
-            color:  #000000;
-        }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col3,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col4,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col5{
-            background-color:  #77b5d9;
-            color:  #000000;
-        }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col2{
-            background-color:  #c1d9ed;
-            color:  #000000;
-        }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col3,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col4,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col5{
-            background-color:  #8abfdd;
-            color:  #000000;
-        }#T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col0,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col1,#T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col2{
-            background-color:  #abd0e6;
-            color:  #000000;
-        }</style><table id="T_97e986f6_0eee_11eb_badb_9078414e5b0a" ><caption>Gradient Boosted Classifier Train Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_97e986f6_0eee_11eb_badb_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col0" class="data row0 col0" >0.852142</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col1" class="data row0 col1" >0.908490</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col2" class="data row0 col2" >0.924594</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col3" class="data row0 col3" >0.893834</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col4" class="data row0 col4" >0.895075</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow0_col5" class="data row0 col5" >0.895075</td>
-            </tr>
-            <tr>
-                        <th id="T_97e986f6_0eee_11eb_badb_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col0" class="data row1 col0" >0.888438</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col1" class="data row1 col1" >0.944538</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col2" class="data row1 col2" >0.848525</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col3" class="data row1 col3" >0.893834</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col4" class="data row1 col4" >0.893834</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow1_col5" class="data row1 col5" >0.893834</td>
-            </tr>
-            <tr>
-                        <th id="T_97e986f6_0eee_11eb_badb_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col0" class="data row2 col0" >0.869912</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col1" class="data row2 col1" >0.926163</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col2" class="data row2 col2" >0.884928</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col3" class="data row2 col3" >0.893834</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col4" class="data row2 col4" >0.893668</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow2_col5" class="data row2 col5" >0.893668</td>
-            </tr>
-            <tr>
-                        <th id="T_97e986f6_0eee_11eb_badb_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col0" class="data row3 col0" >29840.000000</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col1" class="data row3 col1" >29840.000000</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col2" class="data row3 col2" >29840.000000</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col3" class="data row3 col3" >0.893834</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col4" class="data row3 col4" >89520.000000</td>
-                        <td id="T_97e986f6_0eee_11eb_badb_9078414e5b0arow3_col5" class="data row3 col5" >89520.000000</td>
-            </tr>
-    </tbody></table>
-
-
-    
-    
-
-
-<style  type="text/css" >
-    #T_97eb0bca_0eee_11eb_bd47_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_97eb0bca_0eee_11eb_bd47_9078414e5b0a table {
-          align: center;
-    }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col0{
-            background-color:  #08316d;
-            color:  #f1f1f1;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col1,#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col1,#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col1,#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col2,#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col0,#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col0,#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col4,#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col3,#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col5{
-            background-color:  #084990;
-            color:  #f1f1f1;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col4{
-            background-color:  #3787c0;
-            color:  #000000;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col5{
-            background-color:  #084488;
-            color:  #f1f1f1;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col2{
-            background-color:  #0e58a2;
-            color:  #f1f1f1;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col3,#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col5{
-            background-color:  #09529d;
-            color:  #f1f1f1;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col4{
-            background-color:  #4594c7;
-            color:  #000000;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col2{
-            background-color:  #084184;
-            color:  #f1f1f1;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col3{
-            background-color:  #084c95;
-            color:  #f1f1f1;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col4{
-            background-color:  #3c8cc3;
-            color:  #000000;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col0{
-            background-color:  #5da5d1;
-            color:  #000000;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col1{
-            background-color:  #e9f2fa;
-            color:  #000000;
-        }#T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col2{
-            background-color:  #9ac8e0;
-            color:  #000000;
-        }</style><table id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0a" ><caption>Gradient Boosted Classifier Test Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col0" class="data row0 col0" >0.815865</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col1" class="data row0 col1" >0.396088</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col2" class="data row0 col2" >0.818971</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col3" class="data row0 col3" >0.778451</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col4" class="data row0 col4" >0.676975</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow0_col5" class="data row0 col5" >0.786529</td>
-            </tr>
-            <tr>
-                        <th id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col0" class="data row1 col0" >0.820587</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col1" class="data row1 col1" >0.500000</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col2" class="data row1 col2" >0.771612</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col3" class="data row1 col3" >0.778451</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col4" class="data row1 col4" >0.697400</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow1_col5" class="data row1 col5" >0.778451</td>
-            </tr>
-            <tr>
-                        <th id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col0" class="data row2 col0" >0.818219</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col1" class="data row2 col1" >0.442019</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col2" class="data row2 col2" >0.794586</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col3" class="data row2 col3" >0.778451</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col4" class="data row2 col4" >0.684942</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow2_col5" class="data row2 col5" >0.781777</td>
-            </tr>
-            <tr>
-                        <th id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col0" class="data row3 col0" >2419.000000</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col1" class="data row3 col1" >324.000000</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col2" class="data row3 col2" >1712.000000</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col3" class="data row3 col3" >0.778451</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col4" class="data row3 col4" >4455.000000</td>
-                        <td id="T_97eb0bca_0eee_11eb_bd47_9078414e5b0arow3_col5" class="data row3 col5" >4455.000000</td>
-            </tr>
-    </tbody></table>
-
-
-    
-    
-
-
-![png](output_113_4.png)
+![png](output_114_4.png)
 
 
 ### Feature Importance
@@ -1548,182 +1374,7 @@ The parameter grid is more straight forward for a single tree. The two parameter
 ### Reports
 We generate a standard classification report as well as confustion matricies for both training and testing set
 
-<style  type="text/css" >
-    #T_afc23b0a_0eee_11eb_bc42_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_afc23b0a_0eee_11eb_bc42_9078414e5b0a table {
-          margin: auto;
-    }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col0,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col0,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col0,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col1{
-            background-color:  #3080bd;
-            color:  #000000;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col2,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col1,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col1,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col4,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col3{
-            background-color:  #57a0ce;
-            color:  #000000;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col4,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col5{
-            background-color:  #56a0ce;
-            color:  #000000;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col2{
-            background-color:  #e9f2fa;
-            color:  #000000;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col3,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col4,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col5{
-            background-color:  #a4cce3;
-            color:  #000000;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col2{
-            background-color:  #a3cce3;
-            color:  #000000;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col3{
-            background-color:  #7ab6d9;
-            color:  #000000;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col4,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col5{
-            background-color:  #7db8da;
-            color:  #000000;
-        }#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col0,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col1,#T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col2{
-            background-color:  #abd0e6;
-            color:  #000000;
-        }</style><table id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0a" ><caption>K-Nearest Neighbors Train Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col0" class="data row0 col0" >0.860422</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col1" class="data row0 col1" >0.889923</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col2" class="data row0 col2" >0.903078</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col3" class="data row0 col3" >0.884406</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col4" class="data row0 col4" >0.884475</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow0_col5" class="data row0 col5" >0.884475</td>
-            </tr>
-            <tr>
-                        <th id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col0" class="data row1 col0" >0.845342</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col1" class="data row1 col1" >0.954491</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col2" class="data row1 col2" >0.853385</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col3" class="data row1 col3" >0.884406</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col4" class="data row1 col4" >0.884406</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow1_col5" class="data row1 col5" >0.884406</td>
-            </tr>
-            <tr>
-                        <th id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col0" class="data row2 col0" >0.852815</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col1" class="data row2 col1" >0.921077</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col2" class="data row2 col2" >0.877529</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col3" class="data row2 col3" >0.884406</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col4" class="data row2 col4" >0.883807</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow2_col5" class="data row2 col5" >0.883807</td>
-            </tr>
-            <tr>
-                        <th id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col0" class="data row3 col0" >29840.000000</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col1" class="data row3 col1" >29840.000000</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col2" class="data row3 col2" >29840.000000</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col3" class="data row3 col3" >0.884406</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col4" class="data row3 col4" >89520.000000</td>
-                        <td id="T_afc23b0a_0eee_11eb_bc42_9078414e5b0arow3_col5" class="data row3 col5" >89520.000000</td>
-            </tr>
-    </tbody></table>
-
-
-    
-    
-
-
-<style  type="text/css" >
-    #T_afc3e8b8_0eee_11eb_8a21_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_afc3e8b8_0eee_11eb_8a21_9078414e5b0a table {
-          align: center;
-    }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col0,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col0,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col0,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col4,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col1,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col1,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col1,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col2{
-            background-color:  #084387;
-            color:  #f1f1f1;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col3,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col2{
-            background-color:  #0c56a0;
-            color:  #f1f1f1;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col4{
-            background-color:  #3d8dc4;
-            color:  #000000;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col5{
-            background-color:  #084a91;
-            color:  #f1f1f1;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col3,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col5,#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col3{
-            background-color:  #09529d;
-            color:  #f1f1f1;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col4{
-            background-color:  #4493c7;
-            color:  #000000;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col2{
-            background-color:  #08488e;
-            color:  #f1f1f1;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col4{
-            background-color:  #3f8fc5;
-            color:  #000000;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col5{
-            background-color:  #084c95;
-            color:  #f1f1f1;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col0{
-            background-color:  #5da5d1;
-            color:  #000000;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col1{
-            background-color:  #e9f2fa;
-            color:  #000000;
-        }#T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col2{
-            background-color:  #9ac8e0;
-            color:  #000000;
-        }</style><table id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0a" ><caption>K-Nearest Neighbors Test Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col0" class="data row0 col0" >0.813508</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col1" class="data row0 col1" >0.320965</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col2" class="data row0 col2" >0.777915</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col3" class="data row0 col3" >0.740965</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col4" class="data row0 col4" >0.637462</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow0_col5" class="data row0 col5" >0.764008</td>
-            </tr>
-            <tr>
-                        <th id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col0" class="data row1 col0" >0.771807</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col1" class="data row1 col1" >0.533951</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col2" class="data row1 col2" >0.736565</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col3" class="data row1 col3" >0.740965</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col4" class="data row1 col4" >0.680774</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow1_col5" class="data row1 col5" >0.740965</td>
-            </tr>
-            <tr>
-                        <th id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col0" class="data row2 col0" >0.792109</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col1" class="data row2 col1" >0.400927</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col2" class="data row2 col2" >0.756676</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col3" class="data row2 col3" >0.740965</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col4" class="data row2 col4" >0.649904</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow2_col5" class="data row2 col5" >0.750043</td>
-            </tr>
-            <tr>
-                        <th id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col0" class="data row3 col0" >2419.000000</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col1" class="data row3 col1" >324.000000</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col2" class="data row3 col2" >1712.000000</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col3" class="data row3 col3" >0.740965</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col4" class="data row3 col4" >4455.000000</td>
-                        <td id="T_afc3e8b8_0eee_11eb_8a21_9078414e5b0arow3_col5" class="data row3 col5" >4455.000000</td>
-            </tr>
-    </tbody></table>
-
-
-    
-    
-
-
-![png](output_123_4.png)
+![png](output_118_4.png)
 
 
 ### Feature Importance
@@ -1740,195 +1391,13 @@ The main parameters for this modela are number of estimators, criterion and max 
 ### Reports
 We generate a standard classification report as well as confustion matricies for both training and testing set
 
-<style  type="text/css" >
-    #T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0a table {
-          margin: auto;
-    }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col0,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col2,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col0,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col1{
-            background-color:  #dfebf7;
-            color:  #000000;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col2,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col1,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col1,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col4,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col3{
-            background-color:  #a5cde3;
-            color:  #000000;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col4,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col5{
-            background-color:  #9fcae1;
-            color:  #000000;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col0{
-            background-color:  #c6dbef;
-            color:  #000000;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col3,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col4,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col5{
-            background-color:  #8dc1dd;
-            color:  #000000;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col2{
-            background-color:  #79b5d9;
-            color:  #000000;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col3{
-            background-color:  #6dafd7;
-            color:  #000000;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col4,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col5{
-            background-color:  #6fb0d7;
-            color:  #000000;
-        }#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col0,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col1,#T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col2{
-            background-color:  #abd0e6;
-            color:  #000000;
-        }</style><table id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0a" ><caption>Random Forest Classifier Train Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col0" class="data row0 col0" >0.907465</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col1" class="data row0 col1" >0.914186</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col2" class="data row0 col2" >0.962641</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col3" class="data row0 col3" >0.926899</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col4" class="data row0 col4" >0.928097</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow0_col5" class="data row0 col5" >0.928097</td>
-            </tr>
-            <tr>
-                        <th id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col0" class="data row1 col0" >0.912969</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col1" class="data row1 col1" >0.975704</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col2" class="data row1 col2" >0.892024</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col3" class="data row1 col3" >0.926899</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col4" class="data row1 col4" >0.926899</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow1_col5" class="data row1 col5" >0.926899</td>
-            </tr>
-            <tr>
-                        <th id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col0" class="data row2 col0" >0.910209</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col1" class="data row2 col1" >0.943944</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col2" class="data row2 col2" >0.925988</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col3" class="data row2 col3" >0.926899</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col4" class="data row2 col4" >0.926714</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow2_col5" class="data row2 col5" >0.926714</td>
-            </tr>
-            <tr>
-                        <th id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col0" class="data row3 col0" >29840.000000</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col1" class="data row3 col1" >29840.000000</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col2" class="data row3 col2" >29840.000000</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col3" class="data row3 col3" >0.926899</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col4" class="data row3 col4" >89520.000000</td>
-                        <td id="T_2f1d32a8_0eef_11eb_b8a5_9078414e5b0arow3_col5" class="data row3 col5" >89520.000000</td>
-            </tr>
-    </tbody></table>
-
-
-    
-    
-
-
-<style  type="text/css" >
-    #T_2f1eb928_0eef_11eb_a7eb_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_2f1eb928_0eef_11eb_a7eb_9078414e5b0a table {
-          align: center;
-    }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col0{
-            background-color:  #083674;
-            color:  #f1f1f1;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col1,#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col1,#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col1,#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col2,#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col0,#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col0,#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col4,#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col3{
-            background-color:  #08509b;
-            color:  #f1f1f1;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col4{
-            background-color:  #3989c1;
-            color:  #000000;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col5{
-            background-color:  #08468b;
-            color:  #f1f1f1;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col2{
-            background-color:  #1764ab;
-            color:  #f1f1f1;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col3,#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col5{
-            background-color:  #0d57a1;
-            color:  #f1f1f1;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col4{
-            background-color:  #4a98c9;
-            color:  #000000;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col2{
-            background-color:  #083e81;
-            color:  #f1f1f1;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col3{
-            background-color:  #084e98;
-            color:  #f1f1f1;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col4{
-            background-color:  #3c8cc3;
-            color:  #000000;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col5{
-            background-color:  #084990;
-            color:  #f1f1f1;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col0{
-            background-color:  #5da5d1;
-            color:  #000000;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col1{
-            background-color:  #e9f2fa;
-            color:  #000000;
-        }#T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col2{
-            background-color:  #9ac8e0;
-            color:  #000000;
-        }</style><table id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0a" ><caption>Random Forest Classifier Test Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col0" class="data row0 col0" >0.826578</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col1" class="data row0 col1" >0.364185</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col2" class="data row0 col2" >0.837700</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col3" class="data row0 col3" >0.778900</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col4" class="data row0 col4" >0.676154</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow0_col5" class="data row0 col5" >0.797223</td>
-            </tr>
-            <tr>
-                        <th id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col0" class="data row1 col0" >0.817693</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col1" class="data row1 col1" >0.558642</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col2" class="data row1 col2" >0.765771</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col3" class="data row1 col3" >0.778900</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col4" class="data row1 col4" >0.714035</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow1_col5" class="data row1 col5" >0.778900</td>
-            </tr>
-            <tr>
-                        <th id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col0" class="data row2 col0" >0.822111</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col1" class="data row2 col1" >0.440926</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col2" class="data row2 col2" >0.800122</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col3" class="data row2 col3" >0.778900</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col4" class="data row2 col4" >0.687720</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow2_col5" class="data row2 col5" >0.785939</td>
-            </tr>
-            <tr>
-                        <th id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col0" class="data row3 col0" >2419.000000</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col1" class="data row3 col1" >324.000000</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col2" class="data row3 col2" >1712.000000</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col3" class="data row3 col3" >0.778900</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col4" class="data row3 col4" >4455.000000</td>
-                        <td id="T_2f1eb928_0eef_11eb_a7eb_9078414e5b0arow3_col5" class="data row3 col5" >4455.000000</td>
-            </tr>
-    </tbody></table>
-
-
-    
-    
-
-
-![png](output_132_4.png)
+![png](output_120_4.png)
 
 
 ### Feature Importance
 Luckily, random forests are supported models for a python package caled shap. There will be more info on shap in the final conclusion section. Shap is a tool specifically designed to provide substantial insight in how features play a role in the prediction step. The following cell will provide a magnitude summary of what features were used in the models predictions. While usful, shap is a summation calculation which means it gives information about how important a feature is, not what the exact relationship between the feature and the target is. 
 
-
-![png](output_134_1.png)
+![png](output_120_6.png)
 
 
 ## Support Vector Machine Model
@@ -1941,187 +1410,7 @@ The important parameters for SVMs are kernel and C. Kernel is the type of underl
 ### Reports
 We generate a standard classification report as well as confustion matricies for both training and testing set
 
-
-
-<style  type="text/css" >
-    #T_32ecff50_0eef_11eb_99cb_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_32ecff50_0eef_11eb_99cb_9078414e5b0a table {
-          margin: auto;
-    }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col0,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col0,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col0,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col1,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col1,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col1,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col4,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col2{
-            background-color:  #084e98;
-            color:  #f1f1f1;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col3{
-            background-color:  #5ba3d0;
-            color:  #000000;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col4,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col5{
-            background-color:  #4191c6;
-            color:  #000000;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col2{
-            background-color:  #8abfdd;
-            color:  #000000;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col3,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col4,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col5{
-            background-color:  #75b4d8;
-            color:  #000000;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col2{
-            background-color:  #084b93;
-            color:  #f1f1f1;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col3{
-            background-color:  #4d99ca;
-            color:  #000000;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col4,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col5{
-            background-color:  #4090c5;
-            color:  #000000;
-        }#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col0,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col1,#T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col2{
-            background-color:  #abd0e6;
-            color:  #000000;
-        }</style><table id="T_32ecff50_0eef_11eb_99cb_9078414e5b0a" ><caption>Support Vector Machine Classifier Train Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_32ecff50_0eef_11eb_99cb_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col0" class="data row0 col0" >0.497854</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col1" class="data row0 col1" >0.734226</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col2" class="data row0 col2" >0.707314</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col3" class="data row0 col3" >0.627212</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col4" class="data row0 col4" >0.646465</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow0_col5" class="data row0 col5" >0.646465</td>
-            </tr>
-            <tr>
-                        <th id="T_32ecff50_0eef_11eb_99cb_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col0" class="data row1 col0" >0.625938</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col1" class="data row1 col1" >0.628619</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col2" class="data row1 col2" >0.627078</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col3" class="data row1 col3" >0.627212</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col4" class="data row1 col4" >0.627212</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow1_col5" class="data row1 col5" >0.627212</td>
-            </tr>
-            <tr>
-                        <th id="T_32ecff50_0eef_11eb_99cb_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col0" class="data row2 col0" >0.554597</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col1" class="data row2 col1" >0.677331</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col2" class="data row2 col2" >0.664784</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col3" class="data row2 col3" >0.627212</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col4" class="data row2 col4" >0.632237</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow2_col5" class="data row2 col5" >0.632237</td>
-            </tr>
-            <tr>
-                        <th id="T_32ecff50_0eef_11eb_99cb_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col0" class="data row3 col0" >29840.000000</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col1" class="data row3 col1" >29840.000000</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col2" class="data row3 col2" >29840.000000</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col3" class="data row3 col3" >0.627212</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col4" class="data row3 col4" >89520.000000</td>
-                        <td id="T_32ecff50_0eef_11eb_99cb_9078414e5b0arow3_col5" class="data row3 col5" >89520.000000</td>
-            </tr>
-    </tbody></table>
-
-
-    
-    
-
-
-<style  type="text/css" >
-    #T_32eed40c_0eef_11eb_952e_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_32eed40c_0eef_11eb_952e_9078414e5b0a table {
-          align: center;
-    }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col0,#T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col2,#T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col0,#T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col4,#T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col1,#T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col1,#T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col1,#T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col2,#T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col5{
-            background-color:  #08468b;
-            color:  #f1f1f1;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col3{
-            background-color:  #135fa7;
-            color:  #f1f1f1;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col4{
-            background-color:  #3e8ec4;
-            color:  #000000;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col5{
-            background-color:  #084b93;
-            color:  #f1f1f1;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col0{
-            background-color:  #084488;
-            color:  #f1f1f1;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col3,#T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col5{
-            background-color:  #084e98;
-            color:  #f1f1f1;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col4{
-            background-color:  #3d8dc4;
-            color:  #000000;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col2{
-            background-color:  #083776;
-            color:  #f1f1f1;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col3{
-            background-color:  #08509b;
-            color:  #f1f1f1;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col4{
-            background-color:  #3989c1;
-            color:  #000000;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col0{
-            background-color:  #5da5d1;
-            color:  #000000;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col1{
-            background-color:  #e9f2fa;
-            color:  #000000;
-        }#T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col2{
-            background-color:  #9ac8e0;
-            color:  #000000;
-        }</style><table id="T_32eed40c_0eef_11eb_952e_9078414e5b0a" ><caption>Support Vector Machine Classifier Test Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_32eed40c_0eef_11eb_952e_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col0" class="data row0 col0" >0.664791</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col1" class="data row0 col1" >0.199115</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col2" class="data row0 col2" >0.625304</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col3" class="data row0 col3" >0.579349</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col4" class="data row0 col4" >0.496404</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow0_col5" class="data row0 col5" >0.615750</td>
-            </tr>
-            <tr>
-                        <th id="T_32eed40c_0eef_11eb_952e_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col0" class="data row1 col0" >0.586193</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col1" class="data row1 col1" >0.416667</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col2" class="data row1 col2" >0.600467</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col3" class="data row1 col3" >0.579349</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col4" class="data row1 col4" >0.534442</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow1_col5" class="data row1 col5" >0.579349</td>
-            </tr>
-            <tr>
-                        <th id="T_32eed40c_0eef_11eb_952e_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col0" class="data row2 col0" >0.623023</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col1" class="data row2 col1" >0.269461</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col2" class="data row2 col2" >0.612634</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col3" class="data row2 col3" >0.579349</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col4" class="data row2 col4" >0.501706</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow2_col5" class="data row2 col5" >0.593317</td>
-            </tr>
-            <tr>
-                        <th id="T_32eed40c_0eef_11eb_952e_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col0" class="data row3 col0" >2419.000000</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col1" class="data row3 col1" >324.000000</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col2" class="data row3 col2" >1712.000000</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col3" class="data row3 col3" >0.579349</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col4" class="data row3 col4" >4455.000000</td>
-                        <td id="T_32eed40c_0eef_11eb_952e_9078414e5b0arow3_col5" class="data row3 col5" >4455.000000</td>
-            </tr>
-    </tbody></table>
-
-
-    
-    
-
-
-![png](output_144_4.png)
+![png](output_129_4.png)
 
 
 ### Feature Importance
@@ -2143,403 +1432,18 @@ An assessment of the baseline models leads me to conclude the follow types shoul
 
 We're finally here! We have several working models listed below that will be fed into the our stacking classifier. The stacking classifier is a bundle that takes the guesses of the individual models and treats them as features to be fed into a final model. The final model is trained on these new columns and makes a final prediction based on the individual guesses for the testing set. 
 
-The best models from the baseline gridsearches are the models which will be used in the final estimators
-
-<style>div.sk-top-container {color: black;background-color: white;}div.sk-toggleable {background-color: white;}label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.2em 0.3em;box-sizing: border-box;text-align: center;}div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}div.sk-estimator {font-family: monospace;background-color: #f0f8ff;margin: 0.25em 0.25em;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;}div.sk-estimator:hover {background-color: #d4ebff;}div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;}div.sk-item {z-index: 1;}div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}div.sk-parallel-item:only-child::after {width: 0;}div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0.2em;box-sizing: border-box;padding-bottom: 0.1em;background-color: white;position: relative;}div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}div.sk-label-container {position: relative;z-index: 2;text-align: center;}div.sk-container {display: inline-block;position: relative;}</style><div class="sk-top-container"><div class="sk-container"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="c61a0ac0-06fb-47fb-a5a3-c9651c4e410b" type="checkbox" checked><label class="sk-toggleable__label" for="c61a0ac0-06fb-47fb-a5a3-c9651c4e410b">GradientBoostingClassifier</label><div class="sk-toggleable__content"><pre>GradientBoostingClassifier(max_depth=7, min_samples_split=5, n_estimators=200,
-                           subsample=0.75)</pre></div></div></div></div></div>
-
-
-
-
-```python
-baselineModelCase.models['randomForestClassifier'].get_fit_model().best_estimator_
-```
-
-
-
-
-<style>div.sk-top-container {color: black;background-color: white;}div.sk-toggleable {background-color: white;}label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.2em 0.3em;box-sizing: border-box;text-align: center;}div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}div.sk-estimator {font-family: monospace;background-color: #f0f8ff;margin: 0.25em 0.25em;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;}div.sk-estimator:hover {background-color: #d4ebff;}div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;}div.sk-item {z-index: 1;}div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}div.sk-parallel-item:only-child::after {width: 0;}div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0.2em;box-sizing: border-box;padding-bottom: 0.1em;background-color: white;position: relative;}div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}div.sk-label-container {position: relative;z-index: 2;text-align: center;}div.sk-container {display: inline-block;position: relative;}</style><div class="sk-top-container"><div class="sk-container"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="6a49fe1e-d0fe-4a81-a7a1-26403a66ae2d" type="checkbox" checked><label class="sk-toggleable__label" for="6a49fe1e-d0fe-4a81-a7a1-26403a66ae2d">RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier(criterion='entropy', max_depth=20, min_samples_split=5,
-                       n_estimators=200, n_jobs=-1)</pre></div></div></div></div></div>
-
-
 
 ## Stacking Classifiers
 The two cells below contain the logic of the stacking classifiers to be used. The first stack is going to use a Logistic Regression as the final model to bring everything together. The second stack will add another randomforest as the final estimator. We use two stacks to cover both a regression type and tree type final estimator. Note that we do not need to check the Logistic Regressor for the assumptions of linear modeling 
 
-
-<style>div.sk-top-container {color: black;background-color: white;}div.sk-toggleable {background-color: white;}label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.2em 0.3em;box-sizing: border-box;text-align: center;}div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}div.sk-estimator {font-family: monospace;background-color: #f0f8ff;margin: 0.25em 0.25em;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;}div.sk-estimator:hover {background-color: #d4ebff;}div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;}div.sk-item {z-index: 1;}div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}div.sk-parallel-item:only-child::after {width: 0;}div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0.2em;box-sizing: border-box;padding-bottom: 0.1em;background-color: white;position: relative;}div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}div.sk-label-container {position: relative;z-index: 2;text-align: center;}div.sk-container {display: inline-block;position: relative;}</style><div class="sk-top-container"><div class="sk-container"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="48d4d2e4-acc8-4e2d-874b-0683b1d4ff71" type="checkbox" ><label class="sk-toggleable__label" for="48d4d2e4-acc8-4e2d-874b-0683b1d4ff71">StackingClassifier</label><div class="sk-toggleable__content"><pre>StackingClassifier(cv=3,
-                   estimators=[('gradboost',
-                                GradientBoostingClassifier(max_depth=7,
-                                                           min_samples_split=5,
-                                                           n_estimators=200,
-                                                           subsample=0.75)),
-                               ('randomForest',
-                                RandomForestClassifier(criterion='entropy',
-                                                       max_depth=20,
-                                                       min_samples_split=5,
-                                                       n_estimators=200,
-                                                       n_jobs=-1))],
-                   final_estimator=RandomForestClassifier(n_estimators=300),
-                   n_jobs=-1)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>gradboost</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="8f8c245c-64b1-459b-8183-1457c8b598b7" type="checkbox" ><label class="sk-toggleable__label" for="8f8c245c-64b1-459b-8183-1457c8b598b7">GradientBoostingClassifier</label><div class="sk-toggleable__content"><pre>GradientBoostingClassifier(max_depth=7, min_samples_split=5, n_estimators=200,
-                           subsample=0.75)</pre></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>randomForest</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="dd74f0cf-8093-4465-9dcc-d6b11b56ddd4" type="checkbox" ><label class="sk-toggleable__label" for="dd74f0cf-8093-4465-9dcc-d6b11b56ddd4">RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier(criterion='entropy', max_depth=20, min_samples_split=5,
-                       n_estimators=200, n_jobs=-1)</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="c06c49eb-a095-4bf3-9e04-3383ec89d857" type="checkbox" ><label class="sk-toggleable__label" for="c06c49eb-a095-4bf3-9e04-3383ec89d857">RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier(n_estimators=300)</pre></div></div></div></div></div></div></div></div></div>
-
 ## Stacker Reports
-The stacker is an object outside of our model case so we very quickly code up the styling for the classification report so that it matches the previous ones. 
+Ultimately the Logistic Regressor won out in terms of the best metrics. Here's a more detailed summary of the outcome. 
 
-### Stack 1 Reports
+### Stack Reports
 
+![png]("Final model.png")
 
-<style  type="text/css" >
-    #T_0289d19a_0ef1_11eb_94b9_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_0289d19a_0ef1_11eb_94b9_9078414e5b0a table {
-          margin: auto;
-    }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col0,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col2,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col0,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col1{
-            background-color:  #4b98ca;
-            color:  #000000;
-        }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col2,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col1,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col1,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col4,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col3{
-            background-color:  #63a8d3;
-            color:  #000000;
-        }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col4,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col5{
-            background-color:  #60a7d2;
-            color:  #000000;
-        }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col0{
-            background-color:  #f1f7fd;
-            color:  #000000;
-        }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col3,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col4,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col5{
-            background-color:  #a8cee4;
-            color:  #000000;
-        }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col2{
-            background-color:  #4f9bcb;
-            color:  #000000;
-        }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col3,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col4,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col5{
-            background-color:  #61a7d2;
-            color:  #000000;
-        }#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col0,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col1,#T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col2{
-            background-color:  #abd0e6;
-            color:  #000000;
-        }</style><table id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0a" ><caption>Stack Train Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col0" class="data row0 col0" >0.901453</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col1" class="data row0 col1" >0.930289</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col2" class="data row0 col2" >0.949718</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col3" class="data row0 col3" >0.926776</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col4" class="data row0 col4" >0.927153</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow0_col5" class="data row0 col5" >0.927153</td>
-            </tr>
-            <tr>
-                        <th id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col0" class="data row1 col0" >0.910757</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col1" class="data row1 col1" >0.960623</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col2" class="data row1 col2" >0.908948</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col3" class="data row1 col3" >0.926776</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col4" class="data row1 col4" >0.926776</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow1_col5" class="data row1 col5" >0.926776</td>
-            </tr>
-            <tr>
-                        <th id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col0" class="data row2 col0" >0.906081</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col1" class="data row2 col1" >0.945213</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col2" class="data row2 col2" >0.928886</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col3" class="data row2 col3" >0.926776</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col4" class="data row2 col4" >0.926727</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow2_col5" class="data row2 col5" >0.926727</td>
-            </tr>
-            <tr>
-                        <th id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col0" class="data row3 col0" >29840.000000</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col1" class="data row3 col1" >29840.000000</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col2" class="data row3 col2" >29840.000000</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col3" class="data row3 col3" >0.926776</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col4" class="data row3 col4" >89520.000000</td>
-                        <td id="T_0289d19a_0ef1_11eb_94b9_9078414e5b0arow3_col5" class="data row3 col5" >89520.000000</td>
-            </tr>
-    </tbody></table>
-
-
-
-<style  type="text/css" >
-    #T_028ba622_0ef1_11eb_a883_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_028ba622_0ef1_11eb_a883_9078414e5b0a table {
-          margin: auto;
-    }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col0,#T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col0,#T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col0,#T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col4,#T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col1,#T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col1,#T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col1,#T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col2{
-            background-color:  #083471;
-            color:  #f1f1f1;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col3{
-            background-color:  #084a91;
-            color:  #f1f1f1;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col4{
-            background-color:  #3888c1;
-            color:  #000000;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col5{
-            background-color:  #08458a;
-            color:  #f1f1f1;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col2,#T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col3,#T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col5{
-            background-color:  #084f99;
-            color:  #f1f1f1;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col4{
-            background-color:  #4191c6;
-            color:  #000000;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col2{
-            background-color:  #084082;
-            color:  #f1f1f1;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col3{
-            background-color:  #084c95;
-            color:  #f1f1f1;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col4{
-            background-color:  #3c8cc3;
-            color:  #000000;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col5{
-            background-color:  #084990;
-            color:  #f1f1f1;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col0{
-            background-color:  #5da5d1;
-            color:  #000000;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col1{
-            background-color:  #e9f2fa;
-            color:  #000000;
-        }#T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col2{
-            background-color:  #9ac8e0;
-            color:  #000000;
-        }</style><table id="T_028ba622_0ef1_11eb_a883_9078414e5b0a" ><caption>Stack Test Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_028ba622_0ef1_11eb_a883_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col0" class="data row0 col0" >0.826522</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col1" class="data row0 col1" >0.403341</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col2" class="data row0 col2" >0.818681</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col3" class="data row0 col3" >0.783838</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col4" class="data row0 col4" >0.682848</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow0_col5" class="data row0 col5" >0.792732</td>
-            </tr>
-            <tr>
-                        <th id="T_028ba622_0ef1_11eb_a883_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col0" class="data row1 col0" >0.819347</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col1" class="data row1 col1" >0.521605</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col2" class="data row1 col2" >0.783294</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col3" class="data row1 col3" >0.783838</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col4" class="data row1 col4" >0.708082</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow1_col5" class="data row1 col5" >0.783838</td>
-            </tr>
-            <tr>
-                        <th id="T_028ba622_0ef1_11eb_a883_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col0" class="data row2 col0" >0.822919</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col1" class="data row2 col1" >0.454913</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col2" class="data row2 col2" >0.800597</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col3" class="data row2 col3" >0.783838</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col4" class="data row2 col4" >0.692809</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow2_col5" class="data row2 col5" >0.787577</td>
-            </tr>
-            <tr>
-                        <th id="T_028ba622_0ef1_11eb_a883_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col0" class="data row3 col0" >2419.000000</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col1" class="data row3 col1" >324.000000</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col2" class="data row3 col2" >1712.000000</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col3" class="data row3 col3" >0.783838</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col4" class="data row3 col4" >4455.000000</td>
-                        <td id="T_028ba622_0ef1_11eb_a883_9078414e5b0arow3_col5" class="data row3 col5" >4455.000000</td>
-            </tr>
-    </tbody></table>
-
-
-
-![png](output_168_2.png)
-
-
-### Stack 2 Report
-
-<style  type="text/css" >
-    #T_03232b5e_0ef1_11eb_b920_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_03232b5e_0ef1_11eb_b920_9078414e5b0a table {
-          margin: auto;
-    }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col0,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col2,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col0,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col1{
-            background-color:  #08316d;
-            color:  #f1f1f1;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col2,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col1,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col1,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col4,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col3{
-            background-color:  #3b8bc2;
-            color:  #000000;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col4,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col5{
-            background-color:  #3787c0;
-            color:  #000000;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col0{
-            background-color:  #95c5df;
-            color:  #000000;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col3,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col4,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col5{
-            background-color:  #79b5d9;
-            color:  #000000;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col2{
-            background-color:  #9fcae1;
-            color:  #000000;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col3{
-            background-color:  #7db8da;
-            color:  #000000;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col4,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col5{
-            background-color:  #7cb7da;
-            color:  #000000;
-        }#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col0,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col1,#T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col2{
-            background-color:  #abd0e6;
-            color:  #000000;
-        }</style><table id="T_03232b5e_0ef1_11eb_b920_9078414e5b0a" ><caption>Stack Train Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_03232b5e_0ef1_11eb_b920_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col0" class="data row0 col0" >0.883355</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col1" class="data row0 col1" >0.941761</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col2" class="data row0 col2" >0.942119</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col3" class="data row0 col3" >0.921649</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col4" class="data row0 col4" >0.922412</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow0_col5" class="data row0 col5" >0.922412</td>
-            </tr>
-            <tr>
-                        <th id="T_03232b5e_0ef1_11eb_b920_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col0" class="data row1 col0" >0.917694</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col1" class="data row1 col1" >0.952681</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col2" class="data row1 col2" >0.894571</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col3" class="data row1 col3" >0.921649</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col4" class="data row1 col4" >0.921649</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow1_col5" class="data row1 col5" >0.921649</td>
-            </tr>
-            <tr>
-                        <th id="T_03232b5e_0ef1_11eb_b920_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col0" class="data row2 col0" >0.900197</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col1" class="data row2 col1" >0.947190</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col2" class="data row2 col2" >0.917730</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col3" class="data row2 col3" >0.921649</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col4" class="data row2 col4" >0.921705</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow2_col5" class="data row2 col5" >0.921705</td>
-            </tr>
-            <tr>
-                        <th id="T_03232b5e_0ef1_11eb_b920_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col0" class="data row3 col0" >29840.000000</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col1" class="data row3 col1" >29840.000000</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col2" class="data row3 col2" >29840.000000</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col3" class="data row3 col3" >0.921649</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col4" class="data row3 col4" >89520.000000</td>
-                        <td id="T_03232b5e_0ef1_11eb_b920_9078414e5b0arow3_col5" class="data row3 col5" >89520.000000</td>
-            </tr>
-    </tbody></table>
-
-
-
-<style  type="text/css" >
-    #T_03254dae_0ef1_11eb_8f29_9078414e5b0a caption {
-          text-align: center;
-          font-size: 18px;
-    }    #T_03254dae_0ef1_11eb_8f29_9078414e5b0a table {
-          margin: auto;
-    }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col0,#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col0,#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col0,#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col4,#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col5{
-            background-color:  #08306b;
-            color:  #f1f1f1;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col1,#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col1,#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col1,#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col3{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col2{
-            background-color:  #08326e;
-            color:  #f1f1f1;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col3{
-            background-color:  #08478d;
-            color:  #f1f1f1;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col4{
-            background-color:  #3888c1;
-            color:  #000000;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col5{
-            background-color:  #084488;
-            color:  #f1f1f1;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col2{
-            background-color:  #0e58a2;
-            color:  #f1f1f1;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col3,#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col5{
-            background-color:  #09529d;
-            color:  #f1f1f1;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col4{
-            background-color:  #4594c7;
-            color:  #000000;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col2{
-            background-color:  #08458a;
-            color:  #f1f1f1;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col3{
-            background-color:  #084c95;
-            color:  #f1f1f1;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col4{
-            background-color:  #3e8ec4;
-            color:  #000000;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col5{
-            background-color:  #084b93;
-            color:  #f1f1f1;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col0{
-            background-color:  #5da5d1;
-            color:  #000000;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col1{
-            background-color:  #e9f2fa;
-            color:  #000000;
-        }#T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col2{
-            background-color:  #9ac8e0;
-            color:  #000000;
-        }</style><table id="T_03254dae_0ef1_11eb_8f29_9078414e5b0a" ><caption>Stack Test Report</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >functional</th>        <th class="col_heading level0 col1" >functional needs repair</th>        <th class="col_heading level0 col2" >non functional</th>        <th class="col_heading level0 col3" >accuracy</th>        <th class="col_heading level0 col4" >macro avg</th>        <th class="col_heading level0 col5" >weighted avg</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_03254dae_0ef1_11eb_8f29_9078414e5b0alevel0_row0" class="row_heading level0 row0" >precision</th>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col0" class="data row0 col0" >0.815222</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col1" class="data row0 col1" >0.415301</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col2" class="data row0 col2" >0.810662</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col3" class="data row0 col3" >0.780696</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col4" class="data row0 col4" >0.680395</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow0_col5" class="data row0 col5" >0.784384</td>
-            </tr>
-            <tr>
-                        <th id="T_03254dae_0ef1_11eb_8f29_9078414e5b0alevel0_row1" class="row_heading level0 row1" >recall</th>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col0" class="data row1 col0" >0.828028</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col1" class="data row1 col1" >0.469136</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col2" class="data row1 col2" >0.772780</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col3" class="data row1 col3" >0.780696</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col4" class="data row1 col4" >0.689981</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow1_col5" class="data row1 col5" >0.780696</td>
-            </tr>
-            <tr>
-                        <th id="T_03254dae_0ef1_11eb_8f29_9078414e5b0alevel0_row2" class="row_heading level0 row2" >f1-score</th>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col0" class="data row2 col0" >0.821575</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col1" class="data row2 col1" >0.440580</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col2" class="data row2 col2" >0.791268</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col3" class="data row2 col3" >0.780696</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col4" class="data row2 col4" >0.684474</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow2_col5" class="data row2 col5" >0.782220</td>
-            </tr>
-            <tr>
-                        <th id="T_03254dae_0ef1_11eb_8f29_9078414e5b0alevel0_row3" class="row_heading level0 row3" >support</th>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col0" class="data row3 col0" >2419.000000</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col1" class="data row3 col1" >324.000000</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col2" class="data row3 col2" >1712.000000</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col3" class="data row3 col3" >0.780696</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col4" class="data row3 col4" >4455.000000</td>
-                        <td id="T_03254dae_0ef1_11eb_8f29_9078414e5b0arow3_col5" class="data row3 col5" >4455.000000</td>
-            </tr>
-    </tbody></table>
-
-
-
-![png](output_170_2.png)
+![png]("final_model_confusion_matrix.png")
 
 
 # Final Evaluation / Conclusions
@@ -2553,7 +1457,7 @@ Looking at the other results there doesn't appear to be an issue with overfittin
 ## Features
 All models with supported feature importance methods appear to be calling out the same categories, although with some debate as to the order. As for recommendations it would be wise to stick to the shap values presented by the Random Forest Model. Shap values are a technical Game Theory approch to understanding feature importance. Shap associates quantities to every feature through a one vs all analysis. This analysis estimates the impact a feature has on the outcome of every row in the data set by preforming calulation with that without said feature, whereby using the difference in score to determine relative strengths. Further discussion of the Shap method is out of the scope of this analysis but the following graph deonstrates the summary results.
 
-![png](output_175_0.png)
+![png](output_153_0.png)
 
 
 While useful for establishing what features need further inspection, the summary graph doesn't give insight as to what effect the features has on the classification prediction. In order to determine this, we must investigate the individual features more closely. We will explore the top few below.
@@ -2561,7 +1465,7 @@ While useful for establishing what features need further inspection, the summary
 ### Categorical Feature Importance
 It makes sense to break up the analysis over data types because of the label frequencies we'll be dealing with when attempting to project the original data onto one column at a time. We will present visuals and a short analysis for each of the top 20 features.
 
-![png](output_181_0.png)
+![png](output_176_1.png)
 
 
 The enough label for the quantity feature tops the list for magnitude. With a comparison to the distribution of our target classification we see that the wells with the enough quantity are somewhat more likely to be functional and slightly less likely to be non-functional than the overal status group distribution. 
@@ -2571,29 +1475,26 @@ The insufficient quantity is only marginally different from the overal distribut
 The dry quantity on the other hand heavily favors the non-functional classification.
 
 
-![png](output_185_1.png)
+![png](output_178_1.png)
 
+Wells that employ a gravity feed system are also slightly favored to be functional vs non-functional. There also appears to be a slight increase in needs repairs.
 
 In addition, those with the extraction_type other are overwhelmingly non functional.
 
-
-![png](output_187_1.png)
-
-
-Wells that employ a gravity feed system are also slightly favored to be functional vs non-functional. There also appears to be a slight increase in needs repairs.
+![png](output_182_1.png)
 
 Those that fall under the other type for waterpoint_type are incredibly likely to be non functional wells. 
 
 Wells with the communal standpipe multiple layout are majority non functional. There is also a preceivable increase in the wells that are needing repair.
 
-![png](output_191_1.png)
+![png](output_182_1.png)
 
 
 Being sourced by a river makes a well almost double as likely to be needing repair, however, river sourced wells appear to have high functionality rates than the average. 
 
 Similary with wells that are of the communal standpipe form. 
 
-![png](output_194_1.png)
+![png](output_184_1.png)
 
 
 Wells that are on a never pay system are significantly more likely to be non-functional than average.
@@ -2601,28 +1502,28 @@ Wells that are on a pay per bucket system are more inclined to be functional and
 
 ### Continuous Feature Importance
 
-![png](output_197_0.png)
+![png](output_194_1.png)
 
 
 Districts are more diverse in their makeups. Distric 3 appears to hae a higher likelihood to have non-functional wells when compared to other districts of similar sizes. Distric 6 is much the same. Whereas district 4 and 30 have more functional wells. Rare but still with approximately 1000 wells are districts 33 and 53. Both these districs are more likely to have non-functional wells than functional ones.
 
+![png](output_196_0.png)
+
 Some what intuitively, older wells are much more likely to be non-functional than new ones. Paralleling this, older wells are more likely to be functional but needing repairs that more modern wells. There appears to be a tipping point late 1980 and early 1990s where wells appear to be both functional and non-functional equally likely. 
 
-![png](output_201_0.png)
+![png](output_198_0.png)
 
 
 There are some other interesting population bins that elucidate the other target labels as well. As population grows beyond 200, it seems that no label has a plurality, or in other words functional is a less likely label than average. Note that the view is truncated at 600 for benefit the visual. There are very few data points beyond this scale.
 
-The second graph confirms that the functional needs repair label is not more prevalent in the low populations areas. 
+![png](output_201_0.png)
 
-![png](output_204_0.png)
-
-![png](output_204_2.png)
+![png](output_201_2.png)
 
 
 Note the differences in scale in the previeous figures. For wells with no thyroid hormone present, there is a slightly increased chance from the average that the well is non-functional. Other than the 0 reading, with rare exception, virtually all wells are heavily favored to be functional when compared to the average. This to me suggests that the zero entry for the amount_tst column is an imputed value that was missed by our original preprocessing. It was originally included as a valid entry due to the pressense of very small tsh levels being present in the data set. For future research it would be worth re-evaluating the model, replacing these values with a summary statistic from the training data for the amount_tsh column. 
 
-![png](output_206_0.png)
+![png](output_203_0.png)
 
 
 The gps' with heights less than 500 appear to be more likely than average to be non-functional. Whereas, gps' with height greater than 1300 feet are most likely to be functional. 
