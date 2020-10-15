@@ -57,7 +57,7 @@ This project follows a standard CRISP-DM methodology and is available for downlo
      40  waterpoint_type_group  59400 non-null  object 
     dtypes: float64(3), int64(7), object(31)
     memory usage: 19.0+ MB
-    
+## First 5 Rows    
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -765,7 +765,7 @@ Often time, data collection techniques leed to caturing of redundant infomation.
 * Columns that are macro version of other columns in the data set. Amoung columns with similar entries or columns that are identified as similar by their names, the column with the most granular information is kept. All others are discarded to discourage feature over-representation.
 
     Data columns (total 32 columns):
-         Column                     Non-Null Count  Dtype  
+     #    Column                     Non-Null Count  Dtype  
     ---  ------                     --------------  -----  
      0   status_group               59400 non-null  object 
      1   amount_tsh                 59400 non-null  float64
@@ -801,446 +801,20 @@ Often time, data collection techniques leed to caturing of redundant infomation.
      31  date_recorded_day_of_week  59400 non-null  int64  
     
 
-## Outlier Detection and Deletion
-Outliers are particularly sensetive for continuous variables. You might have noticed that the cagegorical outliers have been dealt with in the feature engineering step. To do this we are going to check the z-scores. Note that we are going to correct for outliers prior to imputation so the original scope of the columns isn't altered by the imputation technique.
-
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>amount_tsh</th>
-      <th>gps_height</th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>num_private</th>
-      <th>district_code</th>
-      <th>population</th>
-      <th>public_meeting</th>
-      <th>permit</th>
-      <th>construction_year</th>
-      <th>date_recorded_month</th>
-      <th>date_recorded_year</th>
-      <th>date_recorded_day</th>
-      <th>date_recorded_day_of_week</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>59400.000000</td>
-      <td>59400.000000</td>
-      <td>59400.000000</td>
-      <td>5.940000e+04</td>
-      <td>59400.000000</td>
-      <td>59400.000000</td>
-      <td>59400.000000</td>
-      <td>56066.000000</td>
-      <td>56344.000000</td>
-      <td>59400.000000</td>
-      <td>59400.000000</td>
-      <td>59400.000000</td>
-      <td>59400.000000</td>
-      <td>59400.000000</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>317.650385</td>
-      <td>668.297239</td>
-      <td>34.077427</td>
-      <td>-5.706033e+00</td>
-      <td>0.474141</td>
-      <td>5.629747</td>
-      <td>179.909983</td>
-      <td>0.909838</td>
-      <td>0.689550</td>
-      <td>1300.652475</td>
-      <td>4.375640</td>
-      <td>2011.921667</td>
-      <td>15.621498</td>
-      <td>2.939933</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>2997.574558</td>
-      <td>693.116350</td>
-      <td>6.567432</td>
-      <td>2.946019e+00</td>
-      <td>12.236230</td>
-      <td>9.633649</td>
-      <td>471.482176</td>
-      <td>0.286416</td>
-      <td>0.462682</td>
-      <td>951.620547</td>
-      <td>3.029247</td>
-      <td>0.958758</td>
-      <td>8.687553</td>
-      <td>1.951627</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>0.000000</td>
-      <td>-90.000000</td>
-      <td>0.000000</td>
-      <td>-1.164944e+01</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>1.000000</td>
-      <td>2002.000000</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>33.090347</td>
-      <td>-8.540621e+00</td>
-      <td>0.000000</td>
-      <td>2.000000</td>
-      <td>0.000000</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>2.000000</td>
-      <td>2011.000000</td>
-      <td>8.000000</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>0.000000</td>
-      <td>369.000000</td>
-      <td>34.908743</td>
-      <td>-5.021597e+00</td>
-      <td>0.000000</td>
-      <td>3.000000</td>
-      <td>25.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1986.000000</td>
-      <td>3.000000</td>
-      <td>2012.000000</td>
-      <td>16.000000</td>
-      <td>3.000000</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>20.000000</td>
-      <td>1319.250000</td>
-      <td>37.178387</td>
-      <td>-3.326156e+00</td>
-      <td>0.000000</td>
-      <td>5.000000</td>
-      <td>215.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>2004.000000</td>
-      <td>7.000000</td>
-      <td>2013.000000</td>
-      <td>23.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>350000.000000</td>
-      <td>2770.000000</td>
-      <td>40.345193</td>
-      <td>-2.000000e-08</td>
-      <td>1776.000000</td>
-      <td>80.000000</td>
-      <td>30500.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>2013.000000</td>
-      <td>12.000000</td>
-      <td>2013.000000</td>
-      <td>31.000000</td>
-      <td>6.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-# slice out the continuous columns
-dataContinuousColumns = dataSecondDrop.select_dtypes(['int64', 'int32', 'float64', 'float32']).drop(columns = ['public_meeting', 'permit'])
-
-# run a loop to get the z-scores for each column
-zScoresArray = []
-for column in dataContinuousColumns.columns:
-    zScoresArray.append(zscore(dataContinuousColumns[column]))
-    
-# make a pretty dataframe
-dfZScores = pd.DataFrame(np.transpose(zScoresArray), columns = dataContinuousColumns.columns)
-
-# show the summary statistics
-display(dfZScores.head())
-```
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>amount_tsh</th>
-      <th>gps_height</th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>num_private</th>
-      <th>district_code</th>
-      <th>population</th>
-      <th>construction_year</th>
-      <th>date_recorded_month</th>
-      <th>date_recorded_year</th>
-      <th>date_recorded_day</th>
-      <th>date_recorded_day_of_week</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1.895665</td>
-      <td>1.041252</td>
-      <td>0.131052</td>
-      <td>-1.408791</td>
-      <td>-0.038749</td>
-      <td>-0.065370</td>
-      <td>-0.150399</td>
-      <td>0.733857</td>
-      <td>-0.454123</td>
-      <td>-0.961322</td>
-      <td>-0.186648</td>
-      <td>-1.506414</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>-0.105970</td>
-      <td>1.054237</td>
-      <td>0.094610</td>
-      <td>1.207934</td>
-      <td>-0.038749</td>
-      <td>-0.376781</td>
-      <td>0.212290</td>
-      <td>0.745416</td>
-      <td>-0.454123</td>
-      <td>1.124729</td>
-      <td>-1.107513</td>
-      <td>-0.481619</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>-0.097630</td>
-      <td>0.025541</td>
-      <td>0.515158</td>
-      <td>0.639751</td>
-      <td>-0.038749</td>
-      <td>-0.169174</td>
-      <td>0.148660</td>
-      <td>0.744365</td>
-      <td>-0.784241</td>
-      <td>1.124729</td>
-      <td>1.079542</td>
-      <td>-1.506414</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>-0.105970</td>
-      <td>-0.584751</td>
-      <td>0.671308</td>
-      <td>-1.849720</td>
-      <td>-0.038749</td>
-      <td>5.955245</td>
-      <td>-0.258570</td>
-      <td>0.720196</td>
-      <td>-1.114359</td>
-      <td>1.124729</td>
-      <td>1.424867</td>
-      <td>-1.506414</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>-0.105970</td>
-      <td>-0.964200</td>
-      <td>-0.448669</td>
-      <td>1.317271</td>
-      <td>-0.038749</td>
-      <td>-0.480585</td>
-      <td>-0.381587</td>
-      <td>-1.366788</td>
-      <td>0.866348</td>
-      <td>-0.961322</td>
-      <td>-0.301756</td>
-      <td>-0.481619</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-```python
-numPrivateOutliers = dfZScores.num_private.loc[dfZScores.num_private > 3]
-numPrivateOutliers
-```
-
-
-
-
-    469       3.148534
-    519       3.638885
-    727      57.005445
-    1416      3.638885
-    1752      8.297222
-               ...    
-    57983     3.066809
-    58124     3.148534
-    58587     7.561695
-    58974     9.768276
-    59125     3.311984
-    Name: num_private, Length: 234, dtype: float64
-
-
-
-
-```python
-amount_tshOutliers = dfZScores.amount_tsh.loc[dfZScores.amount_tsh > 3]
-amount_tshOutliers
-```
-
-
-
-
-    194       8.234176
-    543      13.238264
-    559       3.897300
-    993       6.566147
-    1342      3.897300
-               ...    
-    58283     6.566147
-    58313     6.566147
-    58566     8.234176
-    58921     3.230089
-    59375    13.238264
-    Name: amount_tsh, Length: 237, dtype: float64
-
-
-
-
-```python
-indiciesToDrop = list(numPrivateOutliers.index)
-for x in amount_tshOutliers.index:
-    indiciesToDrop.append(x)
-indiciesToDrop = list(set(indiciesToDrop))
-dataThirdDrop = dataSecondDrop.drop(index = indiciesToDrop)
-```
-
-With the total dataset being on the order of ~60000 rows, it is only a minor consession to wholesale drop the columns with these continuous outliers. We will do this iterively in case some of the outlier indicies overlap.
-
-
-```python
-dataThirdDrop = dataSecondDrop.drop(index = indiciesToDrop)
-```
 
 ## Re-entering Null Values
 Because there are several columns with null values that were imputed during the data collection process, we will be undoing some of them in order to apply an imputation technique that is consistant for the entire model. 
+
 ### Continuous Data
 The columns with noticable missing data imputation were the following:
 * longitude -- 0 entered which isn't in Tanzania
 * latitude -- 2e10 enter which isn't in tanzania
-* population -- 0/1 entered which isn't a feasible population
 * construction_year -- 0 entered which isn't a feasible year
 
-
-```python
-def revert_to_na(column, invalid_entry):
-    '''
-    This function is designed to take an array dataframe column or series
-    and invalid entry and change any values in the arraylike that match the
-    invalid entry to np.nan. This is typlically used when data is imputed
-    poorly during data collection.
-    
-    Parameters:
-    
-        column: np.array(), pd.DataFrame[column], Series
-            The column to which you want to change values back to np.nan
-            
-        invalid-entry: valid data type for column
-            The entry which you would like to find and change to np.nan
-            
-    Returns:
-    
-        list copy of "column" with the "invalid entry" data points changed
-        to np.nan
-    '''
-    
-    # create a container for the return value
-    tempColumn = []
-    
-    # Loop through and find the invalid entry, swapping for np.nan
-    for x in column:
-        if x == invalid_entry:
-            tempColumn.append(np.nan)
-        else:
-            tempColumn.append(x)
-    return tempColumn
-    
-
-```
-
-
-```python
-# Create a list of the colums which will be reverted and a list of the improperly imputed data
-listToFill = ['longitude', 'latitude', 'population', 'construction_year']
-listOfFill = [0, -2e-8, 0, 0]
-
-#Zip the lists for easy looping
-zipOfFill = zip(listToFill, listOfFill)
-
-# Loop through and revert the columns
-for column,value in zipOfFill:
-    dataThirdDrop[column] = revert_to_na(dataThirdDrop[column],value) 
-    
-# Assign the thrid drop to move to the next stage    
-dataThirdDrop['population'] = revert_to_na(dataThirdDrop['population'], 1)
-```
 
 ## Preprocessing Summary
 All that remains is to impute our missing null values. Imputation is best left to scikit learn's object interface so we will continue along with creating a pipeline and modeling workflow
 
-
-```python
-dfPreprocessed = dataThirdDrop.copy()
-```
-
-
-```python
-dfPreprocessed.info()
-```
-
-    <class 'pandas.core.frame.DataFrame'>
-    Int64Index: 58932 entries, 0 to 59399
     Data columns (total 32 columns):
      #   Column                     Non-Null Count  Dtype  
     ---  ------                     --------------  -----  
@@ -1406,107 +980,6 @@ One of the most useful aspects of models is the ability to assign feature import
 
 
 ![png](output_120_6.png)
-
-
-## Adaboost Classification Model Reports
-
-![png](output_124_4.png)
-
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Feature</th>
-      <th>Impact Magnitude</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>date_recorded_day_of_week</td>
-      <td>0.220000</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>encoded_funder_minute</td>
-      <td>0.053333</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>longitude</td>
-      <td>0.046667</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>quantity_insufficient</td>
-      <td>0.040000</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>latitude</td>
-      <td>0.036667</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>district_code</td>
-      <td>0.036667</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>construction_year</td>
-      <td>0.030000</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>payment_never pay</td>
-      <td>0.030000</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>quantity_enough</td>
-      <td>0.030000</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>amount_tsh</td>
-      <td>0.023333</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>population</td>
-      <td>0.020000</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>gps_height</td>
-      <td>0.020000</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>date_recorded_day</td>
-      <td>0.020000</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>encoded_wpt_name_extreme_marginal</td>
-      <td>0.016667</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>payment_pay monthly</td>
-      <td>0.016667</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-## Gaussian Naive Bayes Model Reports
-
-![png](output_127_4.png)
-
 
 ## Support Vector Machine Model Reports
 
@@ -1709,27 +1182,32 @@ All models with supported feature importance methods appear to be calling out th
 
 ![png](output_153_0.png)
 
+While useful for establishing what features need further inspection, the summary graph doesn't give insight as to what effect the features has on the classification prediction. In order to determine this, we must investigate the individual features more closely. We will explore the top few below.
 
-### Interpretation
-The summary plot is 
+### Categorical Feature Importance
+It makes sense to break up the analysis over data types because of the label frequencies we'll be dealing with when attempting to project the original data onto one column at a time. The following images show these projections.
 
-Here are some broken out dependancy graphs that attempt to elucidate some of the feature relationships. In general the relationship between variables and the target. Understanding these relationships is often impossible given the complexity of the relationship transends 3-dimensions. But these dependance plot give basic insights that would other wise be impossible to retrieve.
+![png](output_176_1.png)
 
-![png](output_155_1.png)
-   
-![png](output_155_3.png)
+![png](output_178_1.png)
 
-![png](output_155_5.png)
+![png](output_180_1.png)
 
-![png](output_155_7.png)
+![png](output_182_1.png)
 
-![png](output_155_9.png)
+![png](output_184_1.png)
 
-![png](output_155_11.png)
+![png](output_194_1.png)
 
-![png](output_155_13.png)
+![png](output_196_0.png)
 
-![png](output_155_15.png)
+![png](output_198_0.png)
+
+![png](output_201_0.png)
+
+![png](output_201_2.png)
+
+![png](output_203_0.png)
 
 
 # Things Not Given The Proper Attention They Deserve!
